@@ -296,61 +296,6 @@
 			"response": []
 		},
 		{
-			"name": "findAllProducts",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:65341/v1/product",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "65341",
-					"path": [
-						"v1",
-						"product"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "findAllProductsById",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:65341/v1/product/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "65341",
-					"path": [
-						"v1",
-						"product",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "FindAllProxy",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -465,7 +410,7 @@
 			"response": []
 		},
 		{
-			"name": "DeleteClient Copy",
+			"name": "DeleteProxy",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -480,6 +425,175 @@
 						"v3",
 						"proxy",
 						"632e37f2869a0d162a00ef44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProductsById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProductsByCodeProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product/codeProduct?codeProduct=0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product",
+						"codeProduct"
+					],
+					"query": [
+						{
+							"key": "codeProduct",
+							"value": "0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"string\",\r\n  \"codeProduct\": \"string\",\r\n  \"type\": \"string\",\r\n  \"description\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"string\",\r\n  \"codeProduct\": \"1515\",\r\n  \"type\": \"Passive\",\r\n  \"description\": \"PRUEBA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product/string",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product",
+						"string"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:65341/v1/product/string",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product",
+						"string"
 					]
 				}
 			},
