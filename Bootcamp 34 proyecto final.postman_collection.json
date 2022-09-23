@@ -676,7 +676,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \r\n  \"accountNumber\": \"154825574888\",\r\n  \"balance\": 0,\r\n  \"openDate\": \"2022-09-23T23:19:17.753Z\",\r\n  \"closeDate\": \"2022-09-23T23:19:17.753Z\",\r\n  \"clientId\": \"632dfe56b8a2c22e53049322\",\r\n  \"codeProduct\": \"0001\",\r\n  \"clientType\": \"Business\"\r\n}",
+					"raw": "{\r\n  \r\n  \"accountNumber\": \"154825574888\",\r\n  \"balance\": 0,\r\n  \"openDate\": \"2022-09-23T23:19:17.753Z\",\r\n  \"closeDate\": \"2022-09-23T23:19:17.753Z\",\r\n  \"clientId\": \"632dfe56b8a2c22e53049322\",\r\n  \"codeProduct\": \"0002\",\r\n  \"clientType\": \"Business\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -745,6 +745,66 @@
 						"v1",
 						"clientProduct",
 						"632e3fd86a9fd425b6147330"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReportClientProduct ByCliente",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/reports/clientProduct/findAllbyClientId/63220727dc0f4f0cafb82b96",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"reports",
+						"clientProduct",
+						"findAllbyClientId",
+						"63220727dc0f4f0cafb82b96"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReportClientProduct ByCodeProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/reports/clientProduct/findAllbyCodeProduct/0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"reports",
+						"clientProduct",
+						"findAllbyCodeProduct",
+						"0001"
 					]
 				}
 			},
