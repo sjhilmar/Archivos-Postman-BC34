@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "df1eea2f-13ba-4045-9860-6bd98e78c35f",
+		"name": "Bootcamp 34 proyecto final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20064556"
+	},
+	"item": [
+		{
+			"name": "FindAllClientProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/clientProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"clientProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllClientProfileByID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/clientProfile/632237bfd25ff21893e50f55",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"clientProfile",
+						"632237bfd25ff21893e50f55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateClientProfile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"description\": \"PRUEBA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/clientProfile/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"clientProfile",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClientProfile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"632e351b1ae4c96891d83350\",\r\n  \"description\": \"PRUEBA2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/clientProfile/632e351b1ae4c96891d83350",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"clientProfile",
+						"632e351b1ae4c96891d83350"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClientProfile",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53000/v3/clientProfile/632e351b1ae4c96891d83350",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"clientProfile",
+						"632e351b1ae4c96891d83350"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllClient",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/client",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByIdClient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53000/v3/client/63210ccf9d091e55b96cd60d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"client",
+						"63210ccf9d091e55b96cd60d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByDocumentNumber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53000/v3/client/find/73474087",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"client",
+						"find",
+						"73474087"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"clientProfile\": [\r\n    {\r\n      \"id\": \"0001\",\r\n      \"description\": \"Personal\"\r\n    }\r\n  ],\r\n  \"documentNumber\": \"74851268\",\r\n  \"fullName\": \"Marck Lopez\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/client/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"client",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"632e33c31ae4c96891d8334f\",\r\n    \"clientProfile\": [\r\n        {\r\n            \"id\": \"0001\",\r\n            \"description\": \"Personal\"\r\n        }\r\n    ],\r\n    \"documentNumber\": \"74851268\",\r\n    \"fullName\": \"Marck Lopez Aliaga\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/client/update/632e33c31ae4c96891d8334f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"client",
+						"update",
+						"632e33c31ae4c96891d8334f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53000/v3/client/delete/632e33c31ae4c96891d8334f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"client",
+						"delete",
+						"632e33c31ae4c96891d8334f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProductsById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:65341/v1/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65341",
+					"path": [
+						"v1",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllProxy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAllProxyById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/proxy/6322379dd25ff21893e50f54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"proxy",
+						"6322379dd25ff21893e50f54"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProxy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"type\": \"Signatory\",\r\n  \"fullName\": \"Juan Gabriel Matos\",\r\n  \"clientId\": \"632dfe56b8a2c22e53049322\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/proxy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"proxy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProxy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"632e37f2869a0d162a00ef44\",\r\n    \"type\": \"Signatory\",\r\n    \"fullName\": \"Juan Gabriel Contreras\",\r\n    \"clientId\": \"632dfe56b8a2c22e53049322\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53000/v3/proxy/632e37f2869a0d162a00ef44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"proxy",
+						"632e37f2869a0d162a00ef44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClient Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53000/v3/proxy/632e37f2869a0d162a00ef44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53000",
+					"path": [
+						"v3",
+						"proxy",
+						"632e37f2869a0d162a00ef44"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
