@@ -598,6 +598,157 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "findAllClientProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/clientProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"clientProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindClientProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/v1/clientProduct/632df36ec5fca31ba69346e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"clientProduct",
+						"632df36ec5fca31ba69346e3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindByClientProductAccountNumber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/v1/clientProduct/findByAccountNumber/1100055887567",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"clientProduct",
+						"findByAccountNumber",
+						"1100055887567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"accountNumber\": \"154825574888\",\r\n  \"balance\": 0,\r\n  \"openDate\": \"2022-09-23T23:19:17.753Z\",\r\n  \"closeDate\": \"2022-09-23T23:19:17.753Z\",\r\n  \"clientId\": \"632dfe56b8a2c22e53049322\",\r\n  \"codeProduct\": \"0001\",\r\n  \"clientType\": \"Business\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/clientProduct/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"clientProduct",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"632e3fd86a9fd425b6147330\",\r\n    \"accountNumber\": \"154825574888\",\r\n    \"balance\": 0.0,\r\n    \"openDate\": \"2022-09-23T23:19:17.753+00:00\",\r\n    \"closeDate\": \"2022-09-23T23:19:17.753+00:00\",\r\n    \"clientId\": \"632dfe56b8a2c22e53049322\",\r\n    \"codeProduct\": \"0002\",\r\n    \"clientType\": \"PYME\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/clientProduct/632e3fd86a9fd425b6147330",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"clientProduct",
+						"632e3fd86a9fd425b6147330"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClientProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8087/v1/clientProduct/632e3fd86a9fd425b6147330",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"clientProduct",
+						"632e3fd86a9fd425b6147330"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
